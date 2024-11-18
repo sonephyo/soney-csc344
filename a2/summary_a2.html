@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clojure</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="pl-name"></h1>
+      <h2 id="project-name"></h2>
+      <h3 id="project-description"></h3>
+    </div>
+    <main>
+      <ul class="identifiers">
+        <li>and-elimination</li>
+        <li>and-prop</li>
+        <li>cur-kb</li>
+        <li>cur-kb-selected</li>
+        <li>cur-prop</li>
+        <li>elim-step</li>
+        <li>fwd-infer</li>
+        <li>if-prop</li>
+        <li>kb</li>
+        <li>list-kb</li>
+        <li>logical-operator</li>
+        <li>modus-ponens</li>
+        <li>modus-tollens</li>
+        <li>not-elimination</li>
+        <li>not-prop</li>
+        <li>num</li>
+        <li>output</li>
+        <li>output-prop</li>
+        <li>prop</li>
+        <li>second-prop</li>
+        <li>symbol-prop</li>
+      </ul>
+    </main>
+    <script>fetch("./a2.json")
+        .then((res) => {
+          return res.json()
+        })
+        .then((data) => {
+          document.getElementById("pl-name").textContent= data["pl-name"]
+          document.getElementById("project-name").textContent= data["project-name"]
+          document.getElementById("project-description").textContent= data["project-description"]
+        })
+        .catch((error) => {
+          document.getElementById("pl-name").textContent= "Please open with a local or remote server to view the title"
+        })</script>
+  </body>
+</html>

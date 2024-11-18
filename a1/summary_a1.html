@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C programming</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="pl-name"></h1>
+      <h2 id="project-name"></h2>
+      <h3 id="project-description"></h3>
+    </div>
+    <main>
+      <ul class="identifiers">
+        <li>appendCell</li>
+        <li>appendNewCell</li>
+        <li>ASCII_NUMBER</li>
+        <li>Cell</li>
+        <li>cur_cell</li>
+        <li>cur_instruction</li>
+        <li>cur_state</li>
+        <li>current</li>
+        <li>currentState</li>
+        <li>Direction</li>
+        <li>end_state</li>
+        <li>fileInput</li>
+        <li>finalOutput</li>
+        <li>fptr</li>
+        <li>head</li>
+        <li>i</li>
+        <li>init_Tape</li>
+        <li>initial_content</li>
+        <li>input</li>
+        <li>input_currentState</li>
+        <li>input_direction</li>
+        <li>input_newState</li>
+        <li>input_readVal</li>
+        <li>input_writeVal</li>
+        <li>Instruction</li>
+        <li>Instruction_input</li>
+        <li>instruction_inputs</li>
+        <li>instruction_table</li>
+        <li>lastCell</li>
+        <li>LEFT</li>
+        <li>length</li>
+        <li>lineNumCount</li>
+        <li>main</li>
+        <li>MAX_INSTRUCTION_INPUT</li>
+        <li>moveDirection</li>
+        <li>newCell</li>
+        <li>newState</li>
+        <li>next</li>
+        <li>num_of_states</li>
+        <li>prev</li>
+        <li>readVal</li>
+        <li>RIGHT</li>
+        <li>start_state</li>
+        <li>tempHead</li>
+        <li>token</li>
+        <li>value</li>
+        <li>writeVal</li>
+      </ul>
+    </main>
+    <script>fetch("./a1.json")
+        .then((res) => {
+          return res.json()
+        })
+        .then((data) => {
+          document.getElementById("pl-name").textContent= data["pl-name"]
+          document.getElementById("project-name").textContent= data["project-name"]
+          document.getElementById("project-description").textContent= data["project-description"]
+        })
+        .catch((error) => {
+          document.getElementById("pl-name").textContent= "Please open with a local or remote server to view the title"
+        })</script>
+  </body>
+</html>

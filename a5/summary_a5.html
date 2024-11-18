@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="pl-name"></h1>
+      <h2 id="project-name"></h2>
+      <h3 id="project-description"></h3>
+    </div>
+    <main>
+      <ul class="identifiers">
+        <li>_document</li>
+        <li>asp_patterns</li>
+        <li>c_patterns</li>
+        <li>clojure_patterns</li>
+        <li>comment_eliminator</li>
+        <li>create_assignment_template</li>
+        <li>data</li>
+        <li>database</li>
+        <li>f</li>
+        <li>file</li>
+        <li>file_extension</li>
+        <li>file_name</li>
+        <li>finding_identifiers</li>
+        <li>get_file</li>
+        <li>get_identifiers</li>
+        <li>i</li>
+        <li>identifier_result</li>
+        <li>identifiers</li>
+        <li>index</li>
+        <li>input_email</li>
+        <li>item</li>
+        <li>key</li>
+        <li>line</li>
+        <li>main_dir</li>
+        <li>ocaml_patterns</li>
+        <li>output_dir</li>
+        <li>path_to_file</li>
+        <li>pattern</li>
+        <li>pattern_match_list</li>
+        <li>proj_file_dir</li>
+        <li>python_patterns</li>
+        <li>raw_result</li>
+        <li>re_match</li>
+        <li>result</li>
+        <li>script_dir</li>
+        <li>value</li>
+        <li>writing_files</li>
+      </ul>
+    </main>
+    <script>fetch("./a5.json")
+        .then((res) => {
+          return res.json()
+        })
+        .then((data) => {
+          document.getElementById("pl-name").textContent= data["pl-name"]
+          document.getElementById("project-name").textContent= data["project-name"]
+          document.getElementById("project-description").textContent= data["project-description"]
+        })
+        .catch((error) => {
+          document.getElementById("pl-name").textContent= "Please open with a local or remote server to view the title"
+        })</script>
+  </body>
+</html>

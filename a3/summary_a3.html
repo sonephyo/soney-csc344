@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ocaml</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="pl-name"></h1>
+      <h2 id="project-name"></h2>
+      <h3 id="project-description"></h3>
+    </div>
+    <main>
+      <ul class="identifiers">
+        <li>a</li>
+        <li>a1</li>
+        <li>a2</li>
+        <li>a3</li>
+        <li>Alternation</li>
+        <li>C</li>
+        <li>Concat</li>
+        <li>e1</li>
+        <li>e2</li>
+        <li>exp</li>
+        <li>f1</li>
+        <li>head</li>
+        <li>list</li>
+        <li>list_except_last</li>
+        <li>lookahead</li>
+        <li>looping</li>
+        <li>match_pattern</li>
+        <li>match_tok</li>
+        <li>matcher</li>
+        <li>n</li>
+        <li>Optional</li>
+        <li>parse_E</li>
+        <li>parse_input</li>
+        <li>parsed_pattern_str</li>
+        <li>pattern</li>
+        <li>pattern_str</li>
+        <li>re</li>
+        <li>re_letters</li>
+        <li>read_pattern</li>
+        <li>read_string_recursively</li>
+        <li>str</li>
+        <li>str_list</li>
+        <li>string_list</li>
+        <li>string_to_list_convert</li>
+        <li>t</li>
+        <li>t1</li>
+        <li>t2</li>
+        <li>take_n_elements</li>
+        <li>Tok_Char</li>
+        <li>Tok_END</li>
+        <li>tok_list</li>
+        <li>Tok_LPAREN</li>
+        <li>Tok_OR</li>
+        <li>Tok_Q</li>
+        <li>Tok_RPAREN</li>
+        <li>token</li>
+        <li>tokenize</li>
+        <li>try_match</li>
+        <li>user_input</li>
+        <li>user_input_string</li>
+      </ul>
+    </main>
+    <script>fetch("./a3.json")
+        .then((res) => {
+          return res.json()
+        })
+        .then((data) => {
+          document.getElementById("pl-name").textContent= data["pl-name"]
+          document.getElementById("project-name").textContent= data["project-name"]
+          document.getElementById("project-description").textContent= data["project-description"]
+        })
+        .catch((error) => {
+          document.getElementById("pl-name").textContent= "Please open with a local or remote server to view the title"
+        })</script>
+  </body>
+</html>
